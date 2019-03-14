@@ -1,0 +1,11 @@
+.DS_Store
+.env.sh
+.vscode
+/.env
+/.idea
+/backups
+/node_modules
+/storage
+/vendor
+/web/assets
+license.key

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{%- cache -%}
+{%- minify -%}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% if craft.app.config.general.craftEnv != "production" %}
+	<meta name="robots" content="noindex, nofollow">
+	{% endif %}
+
+	{% block head %}
+		{% include 'global/head' %}
+	{% endblock %}
+
+	<link rel="shortcut icon" href="{{ rev('/favicon.ico') }}" type="image/x-icon">
+
+	<link rel="preload" href="{{ rev('/styles/style.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="{{ rev('/styles/style.css') }}">
+	</noscript>
+
+	<script>{{ craft.inlin.er('scripts/vendor/cssrelpreload/cssrelpreload.js') | raw }}</script>
+</head>
+<body>
+	{% include 'global/googleTagManager' %}
+
+	<div class="wrapper">
+		{% block body %}{% endblock %}
+	</div>
+
+	<script>
+		window.Tokens = window.Tokens || {};
+		window.Tokens.Debug = {{ craft.app.config.general.craftEnv != 'production' ? 'true' : 'false' }};
+	</script>
+
+	{% include 'global/jsonLdWebPage' %}
+
+	{% block foot %}{% endblock %}
+
+	{{ endBody() }}
+</body>
+{%- endminify -%}
+{%- endcache -%}
+</html>

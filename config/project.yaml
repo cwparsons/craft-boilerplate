@@ -1,0 +1,419 @@
+dateModified: 1552442845
+email:
+  fromEmail: $SYSTEM_EMAIL_ADDRESS
+  fromName: $SENDER_NAME
+  template: null
+  transportSettings: null
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  5e413955-b63e-4dc8-bfeb-baaeb701c557:
+    name: 'Social media'
+  7a9d7dfe-9f74-43de-a359-f4b5213e9aba:
+    name: Common
+  8d61d8e2-5294-4a80-af62-bb7599cc59d0:
+    name: 'Site settings'
+  f2888782-ef40-426e-8a9e-9479b077471f:
+    name: 'SIte metadata'
+  f973a1a9-2e1f-4971-90bc-7f02d77e673f:
+    name: 'Page metadata'
+fields:
+  00e4d5cb-e1d3-48aa-9f6e-721511a7d865:
+    contentColumnType: text
+    fieldGroup: 5e413955-b63e-4dc8-bfeb-baaeb701c557
+    handle: instagramHandle
+    instructions: ''
+    name: 'Instagram handle'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  06811c94-77ce-4119-a301-b7f77b496724:
+    contentColumnType: text
+    fieldGroup: 5e413955-b63e-4dc8-bfeb-baaeb701c557
+    handle: twitterHandle
+    instructions: 'The company''s Twitter handle, without the @.'
+    name: 'Twitter handle'
+    searchable: true
+    settings:
+      charLimit: '16'
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  130f8569-1a2a-42f8-ad55-0476e5d17b6a:
+    contentColumnType: text
+    fieldGroup: 8d61d8e2-5294-4a80-af62-bb7599cc59d0
+    handle: googleTagManagerContainerId
+    instructions: 'The container ID should look like "GTM-XXXX".'
+    name: 'Google Tag Manager Container ID'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2b2fb2fb-9853-4ccd-8948-e84327f8c22f:
+    contentColumnType: string
+    fieldGroup: f973a1a9-2e1f-4971-90bc-7f02d77e673f
+    handle: socialMediaImage
+    instructions: 'An image shown when sharing this page across social media. A recommended size of 1200px x 630px.'
+    name: 'Social media image'
+    searchable: false
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:edb59d2b-e33c-4813-9da6-9c995053feae'
+      defaultUploadLocationSubpath: '{slug}'
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:edb59d2b-e33c-4813-9da6-9c995053feae'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:edb59d2b-e33c-4813-9da6-9c995053feae'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  402afcab-4b55-4691-9d41-0867b287f0f9:
+    contentColumnType: text
+    fieldGroup: 5e413955-b63e-4dc8-bfeb-baaeb701c557
+    handle: facebookUrl
+    instructions: ''
+    name: 'Facebook URL'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  97156505-3e2b-4dd1-bbbc-f7dd2d2b8384:
+    contentColumnType: text
+    fieldGroup: 8d61d8e2-5294-4a80-af62-bb7599cc59d0
+    handle: openGraphType
+    instructions: ''
+    name: 'Open Graph type'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: website
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  97fe6c77-d595-476f-95a8-9288437fd8a7:
+    contentColumnType: text
+    fieldGroup: f973a1a9-2e1f-4971-90bc-7f02d77e673f
+    handle: pageDescription
+    instructions: ''
+    name: 'Page description'
+    searchable: true
+    settings:
+      charLimit: '300'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a4c89689-3ef7-4177-8b5e-20abeebbcaed:
+    contentColumnType: text
+    fieldGroup: f2888782-ef40-426e-8a9e-9479b077471f
+    handle: siteName
+    instructions: ''
+    name: 'Site name'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bad85676-1335-4cda-bbb0-b4c459326309:
+    contentColumnType: text
+    fieldGroup: 8d61d8e2-5294-4a80-af62-bb7599cc59d0
+    handle: openGraphLocale
+    instructions: ''
+    name: 'Open Graph locale'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: en_US
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c82a06ba-d33f-4713-b84e-03ad78503240:
+    contentColumnType: text
+    fieldGroup: 8d61d8e2-5294-4a80-af62-bb7599cc59d0
+    handle: googleAnalyticsTrackingId
+    instructions: 'The tracking ID should look like "UA-XXXXXX-Y".'
+    name: 'Google Analytics Tracking ID'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c8efb9e0-7399-4f6d-b18f-993c34c5eec1:
+    contentColumnType: string
+    fieldGroup: f2888782-ef40-426e-8a9e-9479b077471f
+    handle: siteLogo
+    instructions: 'A site logo used for page metadata (JSON+LD).'
+    name: 'Site logo'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:edb59d2b-e33c-4813-9da6-9c995053feae'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:edb59d2b-e33c-4813-9da6-9c995053feae'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:edb59d2b-e33c-4813-9da6-9c995053feae'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d628ef47-ff24-4c54-a7aa-917e340b2f85:
+    contentColumnType: text
+    fieldGroup: 8d61d8e2-5294-4a80-af62-bb7599cc59d0
+    handle: facebookAdminIds
+    instructions: 'A Facebook admin ID associates this website with a Facebook user or page. Separate multiple user IDs with a comma. Find your ID here: http://findmyfacebookid.in'
+    name: 'Facebook Admin IDs'
+    searchable: false
+    settings:
+      charLimit: ''
+      code: '1'
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  eba410dd-eab9-4688-b2af-910e84c6a17c:
+    contentColumnType: text
+    fieldGroup: f973a1a9-2e1f-4971-90bc-7f02d77e673f
+    handle: pageTitle
+    instructions: 'Title tags are displayed on Google search results as the clickable headline for a given result, and are important for usability, SEO, and social sharing.'
+    name: 'Page title'
+    searchable: true
+    settings:
+      charLimit: '60'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+globalSets:
+  06c2cca9-d660-4bf6-9bc3-98fa035a4556:
+    fieldLayouts:
+      ac2f3b5d-2ca5-4672-9510-7331b873fd0c:
+        tabs:
+          -
+            fields:
+              130f8569-1a2a-42f8-ad55-0476e5d17b6a:
+                required: false
+                sortOrder: 3
+              97156505-3e2b-4dd1-bbbc-f7dd2d2b8384:
+                required: false
+                sortOrder: 5
+              bad85676-1335-4cda-bbb0-b4c459326309:
+                required: false
+                sortOrder: 4
+              c82a06ba-d33f-4713-b84e-03ad78503240:
+                required: false
+                sortOrder: 2
+              d628ef47-ff24-4c54-a7aa-917e340b2f85:
+                required: false
+                sortOrder: 1
+            name: 'Site settings'
+            sortOrder: 1
+    handle: siteSettings
+    name: 'Site settings'
+  6a62631f-41b5-44ea-8301-c11c0628567b:
+    fieldLayouts:
+      81ae9e9a-bd00-4e0e-ab21-031489df3ec3:
+        tabs:
+          -
+            fields:
+              00e4d5cb-e1d3-48aa-9f6e-721511a7d865:
+                required: false
+                sortOrder: 2
+              06811c94-77ce-4119-a301-b7f77b496724:
+                required: false
+                sortOrder: 3
+              402afcab-4b55-4691-9d41-0867b287f0f9:
+                required: false
+                sortOrder: 1
+            name: 'Social media'
+            sortOrder: 1
+    handle: socialMedia
+    name: 'Social media'
+imageTransforms:
+  7e52f13c-ea66-4d44-8991-dc880d6f16e1:
+    format: null
+    handle: socialMediaImage
+    height: '630'
+    interlace: none
+    mode: crop
+    name: 'Social media image'
+    position: center-center
+    quality: '100'
+    width: '1200'
+plugins:
+  inlin:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  nsm-asset-rev:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.2
+  redirect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.4
+  sitemap:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
+  typogrify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+sections:
+  d27d7d83-63e0-45e7-9e6e-f8c5b4959f21:
+    enableVersioning: true
+    entryTypes:
+      dd0bc3ad-9bd7-47f9-b7f8-e79ab3faedac:
+        fieldLayouts:
+          e4b9403b-95dd-4030-8304-d0ff5746e1a2:
+            tabs:
+              -
+                fields:
+                  2b2fb2fb-9853-4ccd-8948-e84327f8c22f:
+                    required: false
+                    sortOrder: 3
+                  97fe6c77-d595-476f-95a8-9288437fd8a7:
+                    required: false
+                    sortOrder: 2
+                  eba410dd-eab9-4688-b2af-910e84c6a17c:
+                    required: false
+                    sortOrder: 1
+                name: Page
+                sortOrder: 1
+        handle: pages
+        hasTitleField: true
+        name: Pages
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: pages
+    name: Pages
+    propagateEntries: true
+    siteSettings:
+      f06ce799-592b-45c0-bc1d-15a572648755:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: '{parent.uri}/{slug}'
+    structure:
+      maxLevels: ''
+      uid: a99b1707-443d-410f-bda1-d00ed96971ef
+    type: structure
+siteGroups:
+  411ac12a-aa7b-4d3c-88a8-4982bb74a90f:
+    name: 'Craft Test Local'
+sites:
+  f06ce799-592b-45c0-bc1d-15a572648755:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Craft Boilerplate'
+    primary: true
+    siteGroup: 411ac12a-aa7b-4d3c-88a8-4982bb74a90f
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: $SYSTEM_NAME
+  schemaVersion: 3.1.25
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  edb59d2b-e33c-4813-9da6-9c995053feae:
+    handle: images
+    hasUrls: true
+    name: Images
+    settings:
+      path: $IMAGE_VOLUME_FILE_SYSTEM_PATH
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: $IMAGE_VOLUME_BASE_URL

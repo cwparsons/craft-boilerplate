@@ -1,0 +1,66 @@
+{% cache %}
+<title>{{ entry.pageTitle }}{% if entry.slug != '__home__' %} | {{ siteMetadata.siteName }}{% endif %}</title>
+
+{% if entry.pageTitle %}
+<meta itemprop="name" content="{{ entry.pageTitle }}">
+<meta name="twitter:title" content="{{ entry.pageTitle }}{% if entry.slug != '__home__' %} | {{ siteMetadata.siteName }}{% endif %}" />
+<meta property="og:title" content="{{ entry.pageTitle }}{% if entry.slug != '__home__' %} | {{ siteMetadata.siteName }}{% endif %}" />
+{% endif %}
+
+{% if entry.description %}
+{% set description = entry.description %}
+<meta name="description" content="{{ description }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
+{% elseif siteMetadata.description %}
+{% set description = siteMetadata.description %}
+<meta name="description" content="{{ description }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
+{% endif %}
+
+{% if developer.twitterCardType %}
+<meta name="twitter:card" value="{{developer.twitterCardType}}" />
+{% endif %}
+
+{% if socialMedia.twitterHandle %}
+<meta name="twitter:site" content="@{{socialMedia.twitterHandle}}" />
+{% endif %}
+
+{% set image = null %}
+
+{% if entry.socialMediaImage and entry.socialMediaImage.one %}
+	{% set image = entry.socialMediaImage.one %}
+{% elseif siteMetadata.socialMediaImage and siteMetadata.socialMediaImage.one %}
+	{% set image = siteMetadata.socialMediaImage.one %}
+{% endif %}
+
+{% if image %}
+<meta itemprop="image" content="{{ nsm_rev_url(image, 'socialMediaImage') }}">
+<meta name="twitter:image:src" content="{{ nsm_rev_url(image, 'socialMediaImage') }}" />
+<meta property="og:image" content="{{ nsm_rev_url(image, 'socialMediaImage') }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{% endif %}
+
+{% if siteMetadata.siteName %}
+<meta property="og:site_name" content="{{ siteMetadata.siteName }}" />
+{% endif %}
+
+{% if entry.url %}
+<meta property="og:url" content="{{ entry.url }}" />
+{% endif %}
+
+{% if developer.openGraphLocale %}
+<meta property="og:locale" content="{{ developer.openGraphLocale }}" />
+{% endif %}
+
+{% if developer.openGraphType %}
+<meta property="og:type" content="{{ developer.openGraphType }}" />
+{% endif %}
+
+{% if developer.fbAdmins %}
+<meta property="fb:admins" content="{{ developer.fbAdmins }}" />
+{% endif %}
+
+{% endcache %}

@@ -1,0 +1,10 @@
+{% switch craft.app.config.general.craftEnv %}
+{% case "production" %}
+User-agent: *
+Disallow: /craft/
+{% default %}
+User-agent: *
+Disallow: /
+{% endswitch %}
+
+Sitemap: {{ siteUrl |trim('/') }}/sitemap.xml
